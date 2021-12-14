@@ -1,0 +1,17 @@
+header {
+  height: 400px;
+  z-index: 1000;
+  background-color: #f4a261;
+}
+
+.avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.your-name {
+  color: #fff;
+  
+}
