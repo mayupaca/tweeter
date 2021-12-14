@@ -1,0 +1,33 @@
+nav {
+  height: 120px;
+  background-color: hsl(226, 43%, 44%);
+  color: #fff;
+  padding: 0 1.5em;
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  font-family: "Bungee";
+  display: flex;
+  align-items: center;
+  font-size: 40px;
+  margin-top: 30px;
+}
+
+.tweet-button {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.newTweet {
+}
+
+.bold {
+  font-weight: bold;
+}
+.fas.fa-angle-double-down {
+  color: red;
+}
