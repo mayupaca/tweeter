@@ -25,50 +25,10 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 /* main */
- main {
+ .container {
   width: 90%;
   margin: 0 auto;
   font-size: 20px;
   display: flex;
-}
-
-.container {
-  display: flex;
   flex-direction: column;
-}
-
-.button-counter {
-  display: flex;
-  justify-content: space-between;
-}
-
-input {
-  border-bottom: 5px solid #6b705c;
-  border-top: 0;
-  border-right: 0;
-  border-left: 0;
-  padding-bottom: 5px;
-  background: none;
-  padding-top: 60px;
-  width: 1150px;
-}
-
-input::placeholder {
-  font-weight: bold;
-}
-
-.tweet-button {
-  font-family: "Bungee";
-  background-color: hsl(226, 43%, 44%);
-  color: #fff;
-  border: none;
-  height: 30px;
-  margin-top: 30px;
-}
-
-.word-counter {
-  font-family: "Bungee";
-}
-h2 {
-  margin-top: 30px;
 }

@@ -1,0 +1,28 @@
+.new-tweet {
+  
+}
+
+textarea {
+  border-bottom: 5px solid #545149;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  background: none;
+  font-weight: bold;
+  width: 100%;
+}
+
+.tweet-counter {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+button {
+  font-family: "Bungee";
+  background-color: hsl(226, 43%, 44%);
+  color: #fff;
+}
+output {
+  font-family: "Bungee";
+}
