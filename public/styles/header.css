@@ -13,5 +13,11 @@ header {
 
 .your-name {
   color: #fff;
-  
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  font-size: 36px;
+}
+.bg-image {
+  background-image: url('/images/blu-stripes.png');
 }

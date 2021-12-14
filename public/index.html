@@ -27,7 +27,7 @@
     <!-- Top nav bar (fixed) -->
     <nav>
       <span class="logo">tweeter</span>
-      <div class="tweet-button">
+      <div class="write-tweet-button">
         <span class="newTweet">
           <span class="bold">Write </span> a new tweet
         </span>
@@ -35,24 +35,30 @@
       </div>
     </nav>
 <!-- Create header -->
-  <header>
+  <header class="bg-image">
     <div class="avatar">
       <div class="avatar-image">
         <img src="/images/profile-hex.png">
+          <div class="your-name">
+            <span class="bold">Mayu </span> Suzumura
+          </div>
       </div>
-      <br>
-      <div class="your-name">
-        <h2>Your Name</h2>
-      </div>
-    </div>
-    <div class="bg-image">
-      <img src="/images/blu-stripes.png">
     </div>
   </header>
-
-
-
     <!-- Page-specific (main) content here -->
-    <main class="container"></main>
+    <main class="container">
+      <div class="write-tweet-here">
+        <input type="text" placeholder="What are you humming about?">
+      </div>
+      <div class="button-counter">
+        <button class="tweet-button" type="button">TWEET</button>
+        <div class="word-counter">
+          <h2>140</h2>
+        </div>
+      </div>
+    </main>
+
+
+
   </body>
 </html>
