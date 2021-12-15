@@ -1,0 +1,50 @@
+.all-tweets {
+  border: solid #545149;
+}
+.all-tweets:hover {
+  box-shadow:5px 5px #8f8e8b;
+}
+
+.article-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+/* .name {
+  font-family: "Bungee", sans-serif;
+} */
+
+.account {
+  color: #8f8e8b;
+}
+
+.article-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.tweet-body {
+  width: 95%;
+  border-bottom: 5px solid #545149;
+  display: flex;
+  margin:  0 auto;
+}
+
+.icon {
+  margin-top: 20px;
+}
+
+.fas.fa-flag:hover {
+  color: #f4a261;
+}
+.fas.fa-retweet:hover {
+  color: hsl(226, 43%, 44%);
+}
+.fas.fa-heart:hover {
+  color: #f4a261;
+}
+

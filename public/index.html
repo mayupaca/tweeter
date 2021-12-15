@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/all-tweet.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -43,7 +44,7 @@
     <!-- Top nav bar (fixed) -->
     <nav>
       <span class="logo">tweeter</span>
-      <div class="write-tweet-button">
+      <div class="tweet-button">
         <span class="newTweet">
           <span class="bold">Write </span> a new tweet
         </span>
@@ -51,14 +52,14 @@
       </div>
     </nav>
     <!-- Create header -->
-    <header class="bg-image">
-      <div class="avatar">
-        <div class="avatar-image">
-          <img src="/images/profile-hex.png" />
-          <div class="your-name"><span class="bold">Mayu </span> Suzumura</div>
+      <header class="bg-image">
+        <div class="avatar">
+          <div class="avatar-image">
+            <img src="/images/profile-hex.png" />
+            <div class="your-name"><span class="bold">Mayu </span> Suzumura</div>
+          </div>
         </div>
-      </div>
-    </header>
+      </header>
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
@@ -75,6 +76,31 @@
           </div>
         </form>
       </section>
+      <br>
+<!-- Container for all the tweets -->
+      <section class="all-tweets">
+        <article>
+          <header class="article-header">
+            <h2 class="name">John Lennon</h2>
+            <h2 class="account">@Beatles</h2>
+          </header>
+          <div class="tweet-body">
+            <p><b>
+              Hello World:)
+            </b></p>
+          </div>
+          <footer class="article-footer">
+            <h5>10 days ago</h5>
+            <div class="icon">
+              <i class="fas fa-flag"></i>
+              <i class="fas fa-retweet"></i>
+              <i class="fas fa-heart"></i>
+            </div>
+          </footer>
+        </article>
+      </section>
+      <br>
+
     </main>
   </body>
 </html>
