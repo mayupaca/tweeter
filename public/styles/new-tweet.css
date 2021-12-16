@@ -8,7 +8,7 @@ textarea {
   width: 100%;
 }
 
-.tweet-counter {
+.new-tweet-button {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;

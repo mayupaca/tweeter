@@ -1,7 +1,7 @@
-.all-tweets {
+.tweet {
   border: solid #545149;
 }
-.all-tweets:hover {
+#tweets-container:hover {
   box-shadow:5px 5px #8f8e8b;
 }
 
