@@ -1,3 +1,8 @@
+.error {
+  color: #D8000C;
+  background-color: #FFBABA;
+  background-image: url('https://i.imgur.com/GnyDvKN.png');
+}
 textarea {
   border-bottom: 5px solid #545149;
   border-top: 0;

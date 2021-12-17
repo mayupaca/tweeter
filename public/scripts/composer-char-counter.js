@@ -7,6 +7,6 @@ $(function() {
   tweetText.on('input', function() {
     const charCount = $(this).val().length;
     const charDisplay = MAX_CHAR_LENGTH - charCount;
-    $('.tweet-counter .counter').text(charDisplay);
+    $(".new-tweet-button .counter").text(charDisplay);
   });
 });

@@ -13,9 +13,15 @@
   padding: 0 20px;
 }
 
-/* .name {
-  font-family: "Bungee", sans-serif;
-} */
+.name-avatar {
+  display: flex;
+  flex-direction: row;
+}
+
+img {
+  padding-top: 10px;
+}
+
 
 .account {
   color: #8f8e8b;
