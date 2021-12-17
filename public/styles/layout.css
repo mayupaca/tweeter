@@ -26,7 +26,7 @@ body {
  */
 /* main */
  .container {
-  width: 90%;
+  width: 75%;
   margin: 0 auto;
   font-size: 20px;
   display: flex;
@@ -35,20 +35,21 @@ body {
 
 /* more than 1024px */
 @media only screen and (min-width: 1024px) {
-  .header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  .bg-image {
+    width: 30%;
+    float: left;
+    position: sticky;
+    margin: 10px;
+
   }
-
+  .container {
+    width: 60%;
+    float: right;
+    padding-right: 10px;
+  }
+  .nav {
+    position: sticky;
+  }
 }
 
-/* less than 1024px */
-@media only screen and (max-width: 1024px) {
 
-}
-
-/* more than 768px */
-@media only screen and (min-width: 768px) {
-
-}

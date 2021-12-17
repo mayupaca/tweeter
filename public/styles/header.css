@@ -1,5 +1,6 @@
 .bg-image {
   height: 400px;
+  width: 450px;
   z-index: 1000;
   background-color: #f4a261;
   background-image: url('/images/blu-stripes.png');
