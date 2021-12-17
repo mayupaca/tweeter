@@ -1,7 +1,7 @@
-.error {
-  color: #D8000C;
-  background-color: #FFBABA;
-  background-image: url('https://i.imgur.com/GnyDvKN.png');
+.errorMessage {
+  color: red;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 textarea {
   border-bottom: 5px solid #545149;

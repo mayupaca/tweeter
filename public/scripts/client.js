@@ -7,24 +7,32 @@
 //   console.log("hello");
 // });
 $(function() {
+
   $("form").on("submit", function (event) {
     event.preventDefault();
+
+    $(".errorMessage").slideUp().text("");
+
     const charCount = $("textarea").val().length;
     const MAX_CHAR_LENGTH = 140;
+
     if (charCount > MAX_CHAR_LENGTH) {
-      alert("Your tweet is more than 140 characters");
+      return $(".errorMessage").text("Your tweet is more than 140 characters").slideDown();
     }
     if (!$("textarea").val()) {
-      alart("Please tweet something.");
+      return $(".errorMessage").text("Please tweet something.").slideDown();
     }
+
     const queryString = $(this).serialize();
-    $.ajax("/tweets", { method: "POST", data: queryString }).then(function () {
-      $.ajax("/tweets", { method: "GET" }).then(function (tweets) {
-        const newTweetData = tweets[tweets.length - 1];
-        renderTweets([newTweetData]);
+    $.ajax("/tweets", { method: "POST", data: queryString })
+      .then(function() {
+        $.ajax("/tweets", { method: "GET" })
+          .then(function(tweets) {
+            const newTweetData = tweets[tweets.length - 1];
+            renderTweets([newTweetData]);
+          });
       });
     });
-  });
 
   const loadTweets = function () {
     $.ajax("/tweets", { method: "GET" }).then(function (tweets) {
@@ -40,7 +48,7 @@ $(function() {
       $("#tweets-container").prepend(element);
     });
   };
-  
+
   //escape function for safe user input
   const escape = function (str) {
     let div = document.createElement("div");

@@ -32,3 +32,23 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+/* more than 1024px */
+@media only screen and (min-width: 1024px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+}
+
+/* less than 1024px */
+@media only screen and (max-width: 1024px) {
+
+}
+
+/* more than 768px */
+@media only screen and (min-width: 768px) {
+
+}

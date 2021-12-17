@@ -55,7 +55,9 @@
         <i class="fas fa-angle-double-down"></i>
       </div>
     </nav>
-    <!-- Create header -->
+
+    <header>
+      <!-- Create header -->
       <header class="bg-image">
         <div class="avatar">
           <div class="avatar-image">
@@ -64,30 +66,29 @@
           </div>
         </div>
       </header>
-    <!-- Page-specific (main) content here -->
-    <main class="container">
-      <section class="new-tweet">
-        <h2>Compose Tweet</h2>
-        <div class="errorMessage"></div>
-        <form>
-          <textarea
-            name="text"
-            placeholder="What are you humming about?"
-            id="tweet-text"
-          ></textarea>
-          <div class="new-tweet-button">
-            <button type="submit">Tweet</button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
-          </div>
-        </form>
-      </section>
-      <br>
-<!-- Container for all the tweets -->
-      <section id="tweets-container">
-        
-      </section>
-      <br>
-
-    </main>
+      <!-- Page-specific (main) content here -->
+        <main class="container">
+          <section class="new-tweet">
+            <h2>Compose Tweet</h2>
+            <div class="errorMessage"></div>
+            <form>
+              <textarea
+              name="text"
+              placeholder="What are you humming about?"
+              id="tweet-text"
+              ></textarea>
+              <div class="new-tweet-button">
+                <button type="submit">Tweet</button>
+                <output name="counter" class="counter" for="tweet-text">140</output>
+              </div>
+            </form>
+          </section>
+          <br>
+          <!-- Container for all the tweets -->
+          <section id="tweets-container">
+          </section>
+          <br>
+        </main>
+      </header>
   </body>
 </html>
