@@ -1,6 +1,7 @@
 nav {
   height: 120px;
-  background-color: hsl(226, 43%, 44%);
+  background-color: #f4a261;
+  background-image: url('/images/blu-stripes.png');
   color: #fff;
   padding: 0 1.5em;
   display: flex;
@@ -32,4 +33,10 @@ nav {
 .fas.fa-angle-double-down {
   color: red;
 }
+@media screen and (min-width: 1024px) {
+  nav {
+    background-color: hsl(226, 43%, 44%);
+    background-image: none;
+  }
 
+}

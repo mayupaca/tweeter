@@ -6,6 +6,7 @@
 // $(document).ready(function () {
 //   console.log("hello");
 // });
+
 $(function() {
 
   $("form").on("submit", function (event) {

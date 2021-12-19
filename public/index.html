@@ -28,7 +28,7 @@
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
-    <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/avatar.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
     <link rel="stylesheet" href="/styles/all-tweet.css" type="text/css" />
     
@@ -59,7 +59,7 @@
       </div>
     </nav>
 
-    <header>
+    <div class="container">
       <!-- Create header -->
       <header class="bg-image">
         <div class="avatar">
@@ -70,28 +70,28 @@
         </div>
       </header>
       <!-- Page-specific (main) content here -->
-        <main class="container">
-          <section class="new-tweet">
-            <h2>Compose Tweet</h2>
-            <div class="errorMessage"></div>
-            <form>
-              <textarea
-              name="text"
-              placeholder="What are you humming about?"
-              id="tweet-text"
-              ></textarea>
-              <div class="new-tweet-button">
-                <button type="submit">Tweet</button>
-                <output name="counter" class="counter" for="tweet-text">140</output>
-              </div>
-            </form>
-          </section>
-          <br>
-          <!-- Container for all the tweets -->
-          <section id="tweets-container">
-          </section>
-          <br>
-        </main>
-    </header>
+      <main>
+        <section class="new-tweet">
+          <h2>Compose Tweet</h2>
+          <div class="errorMessage"></div>
+          <form>
+            <textarea
+            name="text"
+            placeholder="What are you humming about?"
+            id="tweet-text"
+            ></textarea>
+            <div class="new-tweet-button">
+              <button type="submit">Tweet</button>
+              <output name="counter" class="counter" for="tweet-text">140</output>
+            </div>
+          </form>
+        </section>
+        <br>
+        <!-- Container for all the tweets -->
+        <section id="tweets-container">
+        </section>
+        <br>
+      </main>
+    </div>
   </body>
 </html>

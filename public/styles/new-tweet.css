@@ -27,3 +27,9 @@ button {
 output {
   font-family: "Bungee";
 }
+
+@media screen and (min-width: 1024px) {
+  .new-tweet h2 {
+    margin-top: 0;
+  }
+}
