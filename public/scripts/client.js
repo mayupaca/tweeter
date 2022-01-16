@@ -27,6 +27,7 @@ $(function() {
     const queryString = $(this).serialize();
     $.ajax("/tweets", { method: "POST", data: queryString })
       .then(function() {
+        $("textarea").val("")
         $.ajax("/tweets", { method: "GET" })
           .then(function(tweets) {
             const newTweetData = tweets[tweets.length - 1];

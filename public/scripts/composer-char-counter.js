@@ -12,6 +12,9 @@ $(function() {
     if (charDisplay < 0) {
       $(this).parent().find(".counter").text(charDisplay)
       .css("color", "red");
+    } else {
+      $(this).parent().find(".counter").text(charDisplay)
+      .css("color", "#545149");
     }
     
   });
