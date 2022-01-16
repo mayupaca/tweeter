@@ -8,5 +8,11 @@ $(function() {
     const charCount = $(this).val().length;
     const charDisplay = MAX_CHAR_LENGTH - charCount;
     $(".new-tweet-button .counter").text(charDisplay);
+    
+    if (charDisplay < 0) {
+      $(this).parent().find(".counter").text(charDisplay)
+      .css("color", "red");
+    }
+    
   });
 });
